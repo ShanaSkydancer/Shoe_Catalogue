@@ -1,0 +1,104 @@
+body {
+  font-family: 'Crimson Text', serif;
+  background-color: rgb(215, 216, 211);
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  margin-top: -12px;
+  text-align: left;
+  font-size: 147px;
+  color: #1fc9d4;
+  text-shadow: 0px 15px 4px rgba(34,62,66,.75);
+  background-image: url("http://www.themesltd.com/headers2/shoes_and_heels.png");
+  /*background-image: url("http://allaboutlimassol.com/en/assets/components/phpthumbof/cache/253-0.crescendo_shoes_header.eab1241b988164669161b61153156e10.jpg");*/
+  background-size: cover;
+  height: 245px;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  margin-top: -35px;
+}
+
+h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+h5 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+h6 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+p {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+/*div {
+  clear: both;
+}*/
+
+div #dataOutput {
+  display: inline-block;
+  margin-top: 2em;
+}
+
+#button {
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  background: #1fc9d4;
+  float: left;
+}
+
+#addbutton {
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  background: #1fc9d4;
+}
+
+#data {
+  margin-left: 3em;
+}
+
+/*#dataOutput {
+  margin-left: 47em;
+  margin-top: -26em;
+}*/
+
+.dropdown {
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+
+.dropdown option {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  color: black;
+  background-color: rgba(31, 201, 212, 0.36);
+}
+
+.dropdown:hover {
+  background-color: rgba(31, 201, 212, 0.36);
+}
+
+.pageBottom div {
+  background-image: url("http://i.imgur.com/bOfdSUZ.jpg");
+  background-size: cover;
+}

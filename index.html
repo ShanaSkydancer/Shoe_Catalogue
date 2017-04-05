@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="ShoeCatalogue.css">
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <title>Shoe Catalogue</title>
+</head>
+
+<body>
+
+  <h1>Shana's Shoes</h1>
+
+  <div id="data">
+  </div>
+  <script id="myTemplate" type="text/x-handlebars-template">
+    <div id="selectInput">
+      <h2>Select brand: </h2>
+        <select id="brandSelect" class="dropdown">
+          {{#each option}}
+          <option value="{{brand}}">{{brand}}</option>
+          {{/each}}
+        </select>
+
+      <h3>Select size: </h3>
+        <select id="sizeSelect" class="dropdown">
+          {{#each option}}
+          <option value="{{size}}">{{size}}</option>
+          {{/each}}
+        </select>
+
+      <h4>Select Color: </h4>
+        <select id="colorSelect" class="dropdown">
+          {{#each option}}
+          <option value="{{color}}">{{color}}</opton>
+            {{/each}}
+        </select>
+    </div>
+
+    <div id="dataOutput">
+      <p></p>
+    <button id="button" type="click">Search</button>
+    <button id="addbutton" type="submit">ADD</button>
+    </div>
+  </script>
+
+</body>
+<script src="ShoeCatalogue.js"></script>
+
+</html>
