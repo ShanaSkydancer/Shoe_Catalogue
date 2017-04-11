@@ -8,44 +8,58 @@
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   <title>Shoe Catalogue</title>
+
 </head>
 
 <body>
 
   <h1>Shana's Shoes</h1>
 
+    <button id="addbutton" onclick="myToggle()">Add Stock</button>
+
+  <div id="forUpdate">
+      <form id="fillForm">
+        <input id="newBrand" type="text" name="brand" placeholder="Add new brand..."/>
+        <input id="newSize" type="number" name="size" placeholder="Add new size..."/>
+        <input id="newColor" type="text" name="color" placeholder="Add new color..."/>
+        <input id="newPrice" type="number" name="price" placeholder="Add new price..."/>
+        <input id="newStock" type="number" name="stock" placeholder="Add new stock ..."/>
+        <button id="addStockButton" type="click">Update</button>
+      </form>
+    </div>
+
   <div id="data">
   </div>
+
   <script id="myTemplate" type="text/x-handlebars-template">
     <div id="selectInput">
       <h2>Select brand: </h2>
         <select id="brandSelect" class="dropdown">
           {{#each option}}
-          <option value="{{brand}}">{{brand}}</option>
+          <option value="{{brand}}" name="brand">{{brand}}</option>
           {{/each}}
         </select>
 
       <h3>Select size: </h3>
         <select id="sizeSelect" class="dropdown">
           {{#each option}}
-          <option value="{{size}}">{{size}}</option>
+          <option value="{{size}}" name="size">{{size}}</option>
           {{/each}}
         </select>
 
       <h4>Select Color: </h4>
         <select id="colorSelect" class="dropdown">
           {{#each option}}
-          <option value="{{color}}">{{color}}</opton>
+          <option value="{{color}}" name="color">{{color}}</opton>
             {{/each}}
         </select>
     </div>
+</script>
 
-    <div id="dataOutput">
-      <p></p>
-    <button id="button" type="click">Search</button>
-    <button id="addbutton" type="submit">ADD</button>
-    </div>
-  </script>
+<div id="dataOutput">
+  <p></p>
+  <button id="searchButton" type="click">Search</button>
+</div>
 
 </body>
 <script src="ShoeCatalogue.js"></script>
